@@ -34,6 +34,13 @@
   --dl-space-space-threeunits: 48px;
   --dl-space-space-oneandhalfunits: 24px;
 }
+@font-face {
+  font-family: "font";
+  src: url("font.ttf");
+}
+* {
+  font-family: "font", serif;
+}
 .button {
   color: var(--dl-color-gray-black);
   display: inline-block;

@@ -10,7 +10,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
-  background-color: rgba(191, 143, 228, 1);
+  background-image: linear-gradient(150deg, rgba(255, 226, 74, 0) 100%);
 }
 .working-rectangle6 {
   top: 0px;

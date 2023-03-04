@@ -1,7 +1,7 @@
-.login-container {
+.signup-container {
   min-height: 100vh;
 }
-.login-login {
+.signup-signup {
   width: 100%;
   height: 852px;
   display: flex;
@@ -10,9 +10,9 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
-  background-color: rgba(191, 143, 228, 1);
+  background-image: linear-gradient(150deg, rgba(255, 226, 74, 0) 100%);
 }
-.login-rectangle6 {
+.signup-rectangle6 {
   top: 0px;
   left: 0px;
   width: 393px;
@@ -20,224 +20,7 @@
   position: absolute;
   border-color: transparent;
 }
-.login-text {
-  top: 140px;
-  left: -44px;
-  color: rgba(243, 238, 223, 1);
-  width: 386px;
-  height: auto;
-  position: absolute;
-  font-size: 24px;
-  align-self: auto;
-  font-style: Regular;
-  text-align: center;
-  font-family: PoetsenOne;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  margin-right: 0;
-  margin-bottom: 0;
-  text-decoration: none;
-}
-.login-group7 {
-  top: 564px;
-  left: 43px;
-  width: 311px;
-  height: 93px;
-  display: flex;
-  padding: 0;
-  position: absolute;
-  align-self: auto;
-  box-sizing: border-box;
-  align-items: flex-start;
-  flex-shrink: 1;
-  border-color: transparent;
-  border-style: none;
-  border-width: 0;
-  margin-right: 0;
-  border-radius: 0px 0px 0px 0px;
-  margin-bottom: 0;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: rgba(202, 231, 189, 1);
-}
-.login-text02 {
-  top: 37px;
-  left: 60px;
-  color: rgba(0, 0, 0, 1);
-  height: auto;
-  position: absolute;
-  font-size: 16px;
-  align-self: auto;
-  font-style: Regular;
-  text-align: center;
-  font-family: PoetsenOne;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.login-googlelogopngwebinaroptimizingforsuccessgooglebusi {
-  top: 16px;
-  left: 8px;
-  width: 71px;
-  height: 62px;
-  position: absolute;
-  border-color: transparent;
-}
-.login-group6 {
-  top: 465px;
-  left: 23px;
-  width: 352px;
-  height: 45px;
-  display: flex;
-  padding: 0;
-  position: absolute;
-  align-self: auto;
-  box-sizing: border-box;
-  align-items: flex-start;
-  flex-shrink: 1;
-  border-color: transparent;
-  border-style: none;
-  border-width: 0;
-  margin-right: 0;
-  border-radius: 0px 0px 0px 0px;
-  margin-bottom: 0;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: transparent;
-}
-.login-text04 {
-  left: 117px;
-  color: rgba(0, 0, 0, 1);
-  width: 115px;
-  height: auto;
-  position: absolute;
-  font-size: 16px;
-  align-self: auto;
-  font-style: Regular;
-  text-align: center;
-  font-family: PoetsenOne;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.login-line2 {
-  top: 24px;
-  left: 147px;
-  width: 147px;
-  height: 0px;
-  position: absolute;
-}
-.login-line3 {
-  top: 25px;
-  left: 352px;
-  width: 147px;
-  height: 0px;
-  position: absolute;
-}
-.login-rectangle12 {
-  top: 253px;
-  left: 59px;
-  width: 279px;
-  height: 43px;
-  position: absolute;
-  border-color: transparent;
-}
-.login-text06 {
-  top: 259px;
-  left: 109px;
-  color: rgba(0, 0, 0, 1);
-  width: 179px;
-  height: auto;
-  position: absolute;
-  font-size: 20px;
-  align-self: auto;
-  font-style: Regular;
-  text-align: center;
-  font-family: PoetsenOne;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  margin-right: 0;
-  margin-bottom: 0;
-  text-decoration: none;
-}
-.login-rectangle13 {
-  top: 306px;
-  left: 59px;
-  width: 279px;
-  height: 43px;
-  position: absolute;
-  border-color: transparent;
-}
-.login-text08 {
-  top: 312px;
-  left: 109px;
-  color: rgba(0, 0, 0, 1);
-  width: 179px;
-  height: auto;
-  position: absolute;
-  font-size: 20px;
-  align-self: auto;
-  font-style: Regular;
-  text-align: center;
-  font-family: PoetsenOne;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  margin-right: 0;
-  margin-bottom: 0;
-  text-decoration: none;
-}
-.login-rectangle14 {
-  top: 375px;
-  left: 59px;
-  width: 279px;
-  height: 43px;
-  position: absolute;
-  border-color: transparent;
-}
-.login-text10 {
-  top: 381px;
-  left: 109px;
-  color: rgba(0, 0, 0, 1);
-  width: 179px;
-  height: auto;
-  position: absolute;
-  font-size: 20px;
-  align-self: auto;
-  font-style: Regular;
-  text-align: center;
-  font-family: PoetsenOne;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  margin-right: 0;
-  margin-bottom: 0;
-  text-decoration: none;
-}
-.login-text12 {
-  top: 711px;
-  left: 33px;
-  color: rgba(255, 255, 255, 1);
-  width: 328px;
-  height: auto;
-  position: absolute;
-  font-size: 20px;
-  align-self: auto;
-  font-style: Regular;
-  text-align: center;
-  font-family: PoetsenOne;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  margin-right: 0;
-  margin-bottom: 0;
-  text-decoration: none;
-}
-.login-text17 {
+.signup-text {
   top: 65px;
   left: 21px;
   color: rgba(243, 238, 223, 1);
@@ -256,7 +39,72 @@
   margin-bottom: 0;
   text-decoration: none;
 }
-.login-group5 {
+.signup-text02 {
+  top: 575px;
+  left: 138px;
+  color: rgba(0, 0, 0, 1);
+  width: 115px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: PoetsenOne;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.signup-group3 {
+  top: 637px;
+  left: 41px;
+  width: 311px;
+  height: 93px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgba(202, 230, 189, 1);
+}
+.signup-text04 {
+  top: 37px;
+  left: 63px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: PoetsenOne;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.signup-googlelogopngwebinaroptimizingforsuccessgooglebusi {
+  top: 16px;
+  left: 8px;
+  width: 71px;
+  height: 62px;
+  position: absolute;
+  border-color: transparent;
+}
+.signup-group4 {
   top: 61px;
   left: 264px;
   width: 106px;
@@ -278,7 +126,7 @@
   justify-content: flex-start;
   background-color: transparent;
 }
-.login-ellipse5 {
+.signup-ellipse5 {
   top: 98px;
   left: 22px;
   width: 66px;
@@ -287,7 +135,7 @@
   box-sizing: content-box;
   border-color: transparent;
 }
-.login-image0045 {
+.signup-image0045 {
   top: 0px;
   left: 0px;
   width: 106px;
@@ -295,7 +143,193 @@
   position: absolute;
   border-color: transparent;
 }
-.login-i-phone-statusbar {
+.signup-line2 {
+  top: 599px;
+  left: 168px;
+  width: 147px;
+  height: 0px;
+  position: absolute;
+}
+.signup-line3 {
+  top: 600px;
+  left: 373px;
+  width: 147px;
+  height: 0px;
+  position: absolute;
+}
+.signup-text06 {
+  top: 211px;
+  left: 4px;
+  color: rgba(243, 238, 223, 1);
+  width: 386px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: PoetsenOne;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.signup-rectangle7 {
+  top: 291px;
+  left: 57px;
+  width: 279px;
+  height: 43px;
+  position: absolute;
+}
+.signup-text11 {
+  top: 297px;
+  left: 107px;
+  color: rgba(0, 0, 0, 1);
+  width: 179px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: PoetsenOne;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.signup-rectangle8 {
+  top: 344px;
+  left: 57px;
+  width: 279px;
+  height: 43px;
+  position: absolute;
+  border-color: transparent;
+}
+.signup-text13 {
+  top: 350px;
+  left: 107px;
+  color: rgba(0, 0, 0, 1);
+  width: 179px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: PoetsenOne;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.signup-rectangle9 {
+  top: 397px;
+  left: 57px;
+  width: 279px;
+  height: 43px;
+  position: absolute;
+  border-color: transparent;
+}
+.signup-text15 {
+  top: 403px;
+  left: 107px;
+  color: rgba(0, 0, 0, 1);
+  width: 179px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: PoetsenOne;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.signup-rectangle10 {
+  top: 450px;
+  left: 57px;
+  width: 279px;
+  height: 43px;
+  position: absolute;
+  border-color: transparent;
+}
+.signup-text17 {
+  top: 456px;
+  left: 107px;
+  color: rgba(0, 0, 0, 1);
+  width: 179px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: PoetsenOne;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.signup-rectangle11 {
+  top: 521px;
+  left: 56px;
+  width: 279px;
+  height: 43px;
+  position: absolute;
+  border-color: transparent;
+}
+.signup-text19 {
+  top: 527px;
+  left: 106px;
+  color: rgba(0, 0, 0, 1);
+  width: 179px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: PoetsenOne;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.signup-text21 {
+  top: 763px;
+  left: 33px;
+  color: rgba(255, 255, 255, 1);
+  width: 328px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: PoetsenOne;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.signup-i-phone-statusbar {
   top: 0px;
   left: 0px;
   width: 393px;
@@ -307,14 +341,14 @@
   flex-shrink: 0;
   border-color: transparent;
 }
-.login-wifi {
+.signup-wifi {
   top: 17px;
   left: 317px;
   width: 18px;
   height: 13px;
   position: absolute;
 }
-.login-framebattery {
+.signup-framebattery {
   top: 17px;
   left: 340px;
   width: 27px;
@@ -325,14 +359,14 @@
   flex-shrink: 0;
   border-color: transparent;
 }
-.login-fill {
+.signup-fill {
   top: 1.923076868057251px;
   left: 1.923076868057251px;
   width: 20px;
   height: 9px;
   position: absolute;
 }
-.login-outline {
+.signup-outline {
   top: 0px;
   left: 0px;
   width: 27px;
@@ -340,14 +374,14 @@
   opacity: 0.40;
   position: absolute;
 }
-.login-reception {
+.signup-reception {
   top: 18px;
   left: 293px;
   width: 18px;
   height: 11px;
   position: absolute;
 }
-.login-text19 {
+.signup-text26 {
   top: 15px;
   left: 39px;
   color: rgba(0, 0, 0, 1);
@@ -366,7 +400,7 @@
   text-decoration: none;
 }
 @media(max-width: 767px) {
-  .login-login {
-    width: 395px;
+  .signup-signup {
+    width: 399px;
   }
 }
