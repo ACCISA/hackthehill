@@ -68,4 +68,9 @@ const isUserNew = email => {
         .then((data) => {
             console.log(data)
             console.log(data.greeting)
-        })  }
+        })
+}
+
+const goToSignUp = () => {
+
+}

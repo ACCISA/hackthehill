@@ -1,9 +1,5 @@
 .signup-container {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 40%;
 }
 .signup-signup {
   width: 100%;
@@ -14,8 +10,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
-  margin-top: 8%;
-  margin-left: 40%;
+  background-image: linear-gradient(150deg, rgba(255, 226, 74, 0) 100%);
 }
 .signup-rectangle6 {
   top: 0px;
