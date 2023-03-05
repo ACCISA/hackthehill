@@ -4,7 +4,7 @@ var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 
 const searchForm = document.querySelector('form');
-const searchResultDiv = document.getElementById("search-result");
+const searchResultDiv = document.getElementById("search-result-recipe");
 const container = document.querySelector(".container");
 const foodsImage = document.querySelector(".foods");
 let searchQuery;
@@ -64,7 +64,7 @@ const getNutritionData = (result) => {
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            var nutritionDataDiv = document.getElementById("search-result");
+            var nutritionDataDiv = document.getElementById("search-result-nutri");
             nutritionDataDiv.innerHTML = "<p>Calories: " + data.calories + "</p><p>Protein: " + data.totalNutrients.PROCNT.quantity.toFixed(2) + "g</p><p>Fat: " + data.totalNutrients.FAT.quantity.toFixed(2) + "g</p><p>Carbs: " + data.totalNutrients.CHOCDF.quantity.toFixed(2) + "g</p><p>Sugar: " + data.totalNutrients.SUGAR.quantity.toFixed(2) + "g</p><p>Fiber: " + data.totalNutrients.FIBTG.quantity.toFixed(2) + "g</p><p>Sodium: " + data.totalNutrients.NA.quantity.toFixed(2) + "mg</p>";
         })
         .catch(error => console.error(error));
