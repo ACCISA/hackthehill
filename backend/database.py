@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('users.db')
+conn = sqlite3.connect('users.db',check_same_thread=False)
 c = conn.cursor()
 
 def does_user_exit(email):
@@ -14,7 +14,7 @@ def add_user_settings(email, settings):
     sql = "INSERT INTO users (email,food_restrictions) VALUES (?,?)"
     val = (email, settings)
     c.execute(sql,val)
-    c.commit()
+    conn.commit()
 
 def get_user_settings(email):
     sql = "SELECT food_restrictions FROM users WHERE email = ?"
@@ -26,11 +26,11 @@ def get_user_settings(email):
         return result[0]
     raise Exception("Email not found")
 
-def edit_user_settings(settings,email):
+def edit_user_settings(email,settings):
     sql = "UPDATE users SET food_restrictions = ? WHERE email = ?"
     val = (settings,email)
     c.execute(sql,val)
-    c.commit()
+    conn.commit()
 
 def create_database():
     c.execute(''' 

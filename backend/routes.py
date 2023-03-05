@@ -28,23 +28,27 @@ def allowed_file(filename):
 
 @app.route("/login", methods=['POST'])
 def main_page():
-    if request.method == 'POST':
-        json = request.json
-        print(json)
-        print(json['email'])
-        if database.does_user_exit(email):
-            return jsonify({'status':'true'})  
-        return jsonify({'status':'false'})
+    json = request.json
+    email = json['email']
+    print(json)
+    print(json['email'])
+    if database.does_user_exit(email):
+        print("this user exists")
+        return jsonify({'status':'true'})  
+    print("this user does not exists")
+    return jsonify({'status':'false'})        
 
 @app.route("/settings", methods=['POST','GET'])
 def settings_route():
     json = request.json
     email = json['email']
     if request.method == 'POST':
-        setttings = json['settings']
-        if not database.does_user_exit(email): return jsonify({'status':'This user does not exist'})
-        database.edit_user_settings(settings, email)
-        return jsonify({'status':'Settings updated'})
+        settings = json['restrictions']
+        if not database.does_user_exit(email): 
+            database.add_user_settings(email, settings)
+            return jsonify({'status':'Settings added for new user'})
+        database.edit_user_settings(email, settings)
+        return jsonify({'status':'Settings updated for existing user'})
     if request.method == 'GET':
         if not database.does_user_exit(email): return jsonify({'status':'This user does not exist'})
         settings = database.get_user_settings(email)
@@ -70,4 +74,4 @@ def upload():
 if __name__ == "__main__":
     database.create_database()
 
-    app.run(debug=True)
+    app.run(host="0.0.0.0",port=5000)
