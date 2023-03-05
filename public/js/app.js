@@ -21,18 +21,13 @@ const loginWithGoogle = () => {
     firebase.auth().signInWithPopup(provider)
         .then(result => {
             const user = result.user
-            document.write('Hello ' + user.displayName)
             console.log(user)
 
             if (user) {
-                if (isUserNew(user.email)) {
-                    window.location.href = "working.html"
-                } else {
-                    window.location.href = "settings.html"
-                }
+                isUserNew(user.email)
 
             } else {
-                console.log("user is not logged in")
+                window.location.href = "login.html"
             }
 
         })
@@ -55,7 +50,6 @@ const isUserNew = email => {
             console.log(response)
             if (response.ok) {
                 console.log("suc")
-                console.log()
                 return response.json()
             } else {
                 console.log("non suc")
@@ -64,14 +58,13 @@ const isUserNew = email => {
         })
         .then((data) => {
             console.log(data)
-            console.log(data.greeting)
+            console.log(data.status)
+            if (data.status == "true"){
+                window.location.href = "working.html"
+                return 
+            }
+            window.location.href = "settings.html"
         })
 }
 
-const goToSignUp = () => {
-    window.location = "signup.html";
-}
 
-const goToLogIn = () => {
-    window.location = "login.html";
-}

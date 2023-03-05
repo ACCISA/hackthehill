@@ -66,10 +66,10 @@
             <h1 id="head" >Scan Your Product:</h1>
           </div>
 
-          <video style="object-fit:cover; max-width:100%;max-height:100%; border:1px solid black" id="webCam" autoplay playsinlne width="800px" height="300px"></video>
-          <canvas id="canvas"></canvas>
+          <video style="object-fit:cover; max-width:100%;max-height:100%; border:1px solid black" id="video" autoplay playsinlne width="800" height="300"></video>
+          <canvas id="canvas" width="640" height="480"></canvas>
         
-          <a id="a-tag" download onclick="takeSnap()" style="border: 1px solid black;border-radius:50%;margin-top:10px; margin-left:40%;"><img style="width:60px" src="public/playground_assets/Animated-Camera-PNG-Image.png" alt="camera"></a>
+          <a id="a-tag" download id="send" onclick="takeSnap()" style="border: 1px solid black;border-radius:50%;margin-top:10px; margin-left:40%;"><img style="width:60px" src="public/playground_assets/Animated-Camera-PNG-Image.png" alt="camera"></a>
         </div>
       
     </div>
@@ -92,6 +92,8 @@
           <span>NAME</span>
         </span>
       </span>
+
+      <div id="search-result"></div>
     
     
       <span class="working-text05"><span>Recipe</span></span>
@@ -150,31 +152,22 @@
       <div class="working-component2">
         <div class="working-switchbody5">
           <label class="switch">
-            <input type="checkbox">
+            <input id="search-type" type="checkbox">
             <span class="slider round"></span>
           </label>
          
          
         </div>
         <div class="working-switch2">
-         
+          
           
         </div>
       </div>
     </div>
+    <div id="nutritionData">
 
-    <script>
-
-      const webCam = document.getElementById("webCam")
-      const canvas = document.getElementById("canvas")
-      const webcam = new Webcam(webCam, "user", canvas)
-      webcam.start()
-
-      const takeSnap = () => {
-          let picture = webcam.snap()
-          document.querySelector('a').href = picture
-      }
-  </script>
+    </div>
+    <script src="js/vision.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,46 @@
+
+<video id="video" width="640" height="480" autoplay style="background-color: grey"></video>
+<button id="send">Take & Send Photo</button>
+<canvas id="canvas" width="640" height="480" style="background-color: grey"></canvas>
+
+<script>
+
+// Elements for taking the snapshot
+var video = document.getElementById('video');
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+
+// Get access to the camera!
+if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    // Not adding `{ audio: true }` since we only want video now
+    navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+        //video.src = window.URL.createObjectURL(stream);
+        video.srcObject = stream;
+        video.play();
+    });
+}
+
+// Trigger photo take
+document.getElementById("send").addEventListener("click", function() {
+    context.drawImage(video, 0, 0, 640, 480);
+    canvas.toBlob(upload, "image/jpeg");
+});
+
+function upload(file) {
+    var formdata =  new FormData();
+    formdata.append("snap", file);
+    
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://127.0.0.1:5000/vision", true);
+    xhr.onload = function() {
+        if(this.status = 200) {
+            console.log(this.response);
+        } else {
+            console.error(xhr);
+        }
+        alert(this.response);
+    };
+    xhr.send(formdata);
+}
+
+</script>

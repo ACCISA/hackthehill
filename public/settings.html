@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
+    <script src="js/redirect.js"></script>
+
+    <script defer src="/__/firebase/9.17.2/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/9.17.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.17.2/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.17.2/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.17.2/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.17.2/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.17.2/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.17.2/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.17.2/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.17.2/firebase-performance-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}body { background-image: url("public/playground_assets/rectangle65910-kno7-900h.png");background-repeat: no-repeat; margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
@@ -98,8 +111,7 @@
           </div>
           
         
-<form action="">
-  <button type="submit"><span class="submit">Submit</span></button> 
+  <button type="submit" onclick="saveUserSettings()"><span class="submit">Submit</span></button> 
          <button type="button"> <span class="settings-text20"><span>Delete your Account</span></span></button>
         <button type="button">  <span class="settings-text22"><span>Sign out</span></span></button>
           <div class="settings-group8">
@@ -113,8 +125,8 @@
               alt="IMAGE00451061"
               class="settings-image0045"
             />
-          </form>
           </div>
   </div>
+  <script src="js/settings.js"></script>
   </body>
 </html>
