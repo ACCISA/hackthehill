@@ -25,6 +25,9 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 }
 
 const takeSnap = () => {
+    document.getElementById("search-result-recipe").innerHTML = "";
+    document.getElementById("search-result-nutri").innerHTML = "";
+
     searchType = document.getElementById("search-type").checked
     context.drawImage(video, 0, 0, 640, 480);
     canvas.toBlob(upload, "image/jpeg");
