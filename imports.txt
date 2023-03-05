@@ -1,0 +1,12 @@
+Flask
+PyJWT
+flask
+requests
+flask-cors
+io
+os
+google.cloud
+google.cloud.vision
+google-cloud-vision
+google-auth
+Pillow
