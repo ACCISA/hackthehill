@@ -5,16 +5,48 @@
   height: 1200px;
   position: absolute;
   border-color: transparent;
-  background-image: url("./public/public/playground_assets/rectangle65910-g5ye-900h.png");
+  /*background-image: url("./public/public/playground_assets/rectangle65910-g5ye-900h.png");*/
+  background-attachment: fixed;
   background-size: 396px 1200px;
-  background: cover;
+}
 
+#b {
+  background-image: url("./public/public/playground_assets/rectangle65910-g5ye-900h.png");
+  position: fixed;
+  width: 399px;
+  height: 1200px;
+}
 
+.item > img {
+  width: 280px;
+  height: 280px;
+  margin: -10px 20px 25px 20px;
+  border-radius: 15px;
+}
 
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10%;
+  margin-bottom : 10%;
+  border-radius: 15px;
+  background-color: rgba(243, 238, 223, 0.2);;
+}
+
+#search-result {
+  position: absolute;
+  width: 350px;
+  height: 100px;
+  border: 10px;
+  padding: 10px;
+  top: 400px;
+  left: 20px;
 }
 
 .working-text {
-  top: 340px;
+  top: 300px;
   left: -35px;
   color: rgba(243, 238, 223, 1);
   width: 356px;
@@ -179,8 +211,8 @@
 
 
 .working-ellipse5 {
-  top: 400px;
-  left: 295px;
+  top: 360px;
+  left: 270px;
   width: 66px;
   height: 10px;
   position: absolute;
@@ -191,8 +223,8 @@
 
 
 .working-image0045 {
-  top: 300px;
-  left: 275px;
+  top: 260px;
+  left: 250px;
   width: 106px;
   height: 112px;
   position: absolute;
@@ -200,11 +232,14 @@
 }
 
 #head {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   color: rgba(243, 238, 223, 1);
-  margin: 5px;
-  padding: 5px;
-  border: 1px solid rgba(243, 238, 223, 1);
-  border-radius: 20px;
+  margin-bottom: 7px;
+  /*border: 1px solid rgba(243, 238, 223, 1);*/
+  /*border-radius: 20px;*/
   margin-top: 45px;
 }
 
@@ -261,9 +296,15 @@ input:checked+.slider:before {
   transform: translateX(26px);
 }
 
+#slider {
+  position: absolute;
+  top:10px;
+}
+
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
+  /*margin-bottom: ;*/
 }
 
 .slider.round:before {

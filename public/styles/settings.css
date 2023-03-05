@@ -1,157 +1,170 @@
 .settings-container {
-  min-height: 100vh;
+    min-height: 100vh;
 }
-.wrapper{
-  width: 393px;
-  height: 852px;
+
+.wrapper {
+    width: 393px;
+    height: 852px;
+}
+
+#more::placeholder {
+    color: rgba(243, 238, 223, 0.8);
+}
+
+#more:focus {
+    border-bottom: rgba(243, 238, 223, 1) 2px solid;
+}
+
+#more {
+    position: absolute;
+    left: 90px;
+    top: 540px;
+    color: rgba(243, 238, 223, 1);
+    background-color: transparent;
+    border-bottom: rgba(243, 238, 223, 0.5) 2px solid;
+    /*border-bottom: black 2px;*/
 }
 
 .settings-text02 {
-  top: 10px;
-  left: 240px;
-  color: rgba(243, 238, 223, 1);
-  width: 58px;
-  height: auto;
-  position: absolute;
-  font-size: 40px;
-  align-self: auto;
-  font-style: Regular;
-  text-align: center;
-  font-family: PoetsenOne;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  margin-right: 0;
-  margin-bottom: 0;
-  text-decoration: none;
+    top: 10px;
+    left: 240px;
+    color: rgba(243, 238, 223, 1);
+    width: 58px;
+    height: auto;
+    position: absolute;
+    font-size: 40px;
+    align-self: auto;
+    text-align: center;
+    font-family: PoetsenOne;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
 }
-
-
-
-
 
 .settings-text20 {
-  top: 68
-  0px;
-  left: 189px;
-  color: rgba(235, 75, 75, 1);
-  width: 208px;
-  height: auto;
-  position: absolute;
-  font-size: 23px;
-  align-self: auto;
-  font-style: Regular;
-  text-align: center;
-  font-family: PoetsenOne;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  margin-right: 0;
-  margin-bottom: 0;
-  text-decoration: underline;
+    left: 189px;
+    color: rgba(235, 75, 75, 1);
+    width: 208px;
+    height: auto;
+    position: absolute;
+    font-size: 23px;
+    align-self: auto;
+    text-align: center;
+    font-family: PoetsenOne;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: underline;
 }
+
 .settings-text22 {
-  top: 680px;
-  left: -4px;
-  color: rgba(243, 238, 223, 1);
-  width: 208px;
-  height: auto;
-  position: absolute;
-  font-size: 23px;
-  align-self: auto;
-  font-style: Regular;
-  text-align: center;
-  font-family: PoetsenOne;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  margin-right: 0;
-  margin-bottom: 0;
-  text-decoration: none;
+    top: 650px;
+    left: -4px;
+    color: rgba(243, 238, 223, 1);
+    width: 208px;
+    height: auto;
+    position: absolute;
+    font-size: 23px;
+    align-self: auto;
+    text-align: center;
+    font-family: PoetsenOne;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
 }
+
 .settings-group8 {
-  top: 724px;
-  left: 150px;
-  width: 106px;
-  height: 112px;
-  display: flex;
-  padding: 0;
-  position: absolute;
-  align-self: auto;
-  box-sizing: border-box;
-  align-items: flex-start;
-  flex-shrink: 1;
-  border-color: transparent;
-  border-style: none;
-  border-width: 0;
-  margin-right: 0;
-  border-radius: 0px 0px 0px 0px;
-  margin-bottom: 0;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: transparent;
+    top: 724px;
+    left: 150px;
+    width: 106px;
+    height: 112px;
+    display: flex;
+    padding: 0;
+    position: absolute;
+    align-self: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0;
+    margin-right: 0;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: transparent;
 }
 
-.submit{
-
-padding-left: 180px;
-margin-bottom: 150px;
-color: rgba(243, 238, 223, 1);
+.submit {
+    padding-left: 165px;
+    top: 600px;
+    position: absolute;
+    /*padding-bottom: 20px;*/
+    /*margin-bottom: 150px;*/
+    color: rgba(243, 238, 223, 1);
 
 
 }
+
 .settings-ellipse5 {
-  top: 98px;
-  left: 22px;
-  width: 66px;
-  height: 10px;
-  position: absolute;
-  box-sizing: content-box;
-  border-color: transparent;
+    top: 98px;
+    left: 22px;
+    width: 66px;
+    height: 10px;
+    position: absolute;
+    box-sizing: content-box;
+    border-color: transparent;
 }
 
 .wrapper .checklist {
-  margin: 40px;
-  object-position:center;
-  color: rgba(243, 238, 223, 1);
-  
-  
-  
+    margin: 40px;
+    object-position: center;
+    color: rgba(243, 238, 223, 1);
+
+
 }
 
 .checklist h2 {
-  font-size: 30px;
-  margin-bottom: 10px;
-  color: rgba(243, 238, 223, 1);
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgba(243, 238, 223, 1);
 }
 
 .checklist ul {
-  list-style: none;
-  margin: 5px;
-  padding: 5px;
- 
-  
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+
+
 }
 
 .checklist li {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 .checklist label {
-  font-size: 25px;
-  display: inline-block;
-  margin-left: 5px;
-  
+    font-size: 25px;
+    display: inline-block;
+    margin-left: 5px;
+
 }
 
 input[type=checkbox] {
-  background-color: black;
+    background-color: black;
 }
 
 input[type=checkbox]:checked {
-  background-color: beige;
-  color: aqua;
+    background-color: beige;
+    color: aqua;
 }
 
