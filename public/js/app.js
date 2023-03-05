@@ -8,7 +8,7 @@ const testLog = () => {
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           // User is signed in.
-            console.log("logge din as " + user.displayName)
+            console.log("logged in as " + user.displayName)
         } else {
             console.log("user is not logged in")
             // No user is signed in.
