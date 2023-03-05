@@ -31,10 +31,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
       data-tag="font"
-    />
+      />
     <link rel="stylesheet" href="./styles/style.css" />
+   
   </head>
   <body>
+
     <div>
       <link href="./styles/login.css" rel="stylesheet" />
 
@@ -44,15 +46,15 @@
             src="public/playground_assets/rectangle66629-yqer-900h.png"
             alt="Rectangle66629"
             class="login-rectangle6"
-          />
+            />
           <span class="login-text"><span>Sign in</span></span>
-          <div class="login-group7">
-            <span class="login-text02"><span>Sign in with Google</span></span>
+          <div onclick="loginWithGoogle()" class="login-group7">
+            <span class="login-text02"><span style="width:100%">Sign in with Google</span></span>
             <img
               src="public/playground_assets/googlelogopngwebinaroptimizingforsuccessgooglebusi6629-gba-200h.png"
               alt="googlelogopngwebinaroptimizingforsuccessgooglebusi6629"
               class="login-googlelogopngwebinaroptimizingforsuccessgooglebusi"
-            />
+              />
           </div>
           <div class="login-group6">
             <span class="login-text04"><span>OR</span></span>
@@ -60,53 +62,66 @@
               src="public/playground_assets/line26629-5koa.svg"
               alt="Line26629"
               class="login-line2"
-            />
+              />
             <img
               src="public/playground_assets/line36629-6irh.svg"
               alt="Line36629"
               class="login-line3"
-            />
+              />
           </div>
           <img
             src="public/playground_assets/rectangle121061-j6y5-200h.png"
             alt="Rectangle121061"
             class="login-rectangle12"
-          />
-          <span class="login-text06"><span>Email address</span></span>
-          <img
-            src="public/playground_assets/rectangle131061-f6yll-200h.png"
-            alt="Rectangle131061"
-            class="login-rectangle13"
-          />
-          <span class="login-text08"><span>Password</span></span>
-          <img
-            src="public/playground_assets/rectangle141061-tb6r-200h.png"
-            alt="Rectangle141061"
-            class="login-rectangle14"
-          />
-          <span class="login-text10"><span>Log in</span></span>
-          <span class="login-text12">
-            <span>
-              <span>Don’t have an account?</span>
-              <br />
-              <span>Sign up here</span>
+            />
+          <form action="">
+
+            <span class="login-text06"><span> <input style=" text-align:center;width:100%; background-color:rgba(243, 238, 223, 1);" type="email" name="email" placeholder="Email" id="email" value
+                  Email Address:></span></span>
+
+            <img
+              src="public/playground_assets/rectangle131061-f6yll-200h.png"
+              alt="Rectangle131061"
+              class="login-rectangle13"
+              />
+            <span class="login-text08"><span><input style="text-align:center;width:100%; background-color:rgba(243, 238, 223, 1);" type="Password"
+                  name="passwaord" placeholder="Password"id="password"></span></span>
+            <img
+              src="public/playground_assets/rectangle141061-tb6r-200h.png"
+              alt="Rectangle141061"
+              class="login-rectangle14"
+              />
+            <span class="login-text10"><span><input style="text-align:center;width:100%; background-color:rgba(243, 238, 223, 1);" type="submit" value="Login"></span></span>
+            <span class="login-text12">
+              <span>
+
+
+
+                <a href="/public/signup.html">  <span>Don’t have an account?
+                  <br />
+                  <span>Sign up here</span></span></a>
+                
+              </span>
             </span>
-          </span>
+          </form>
           <span class="login-text17"><span>Welcome back!</span></span>
           <div class="login-group5">
             <img
               src="public/playground_assets/ellipse51061-7fiq-200h.png"
               alt="Ellipse51061"
               class="login-ellipse5"
-            />
+              />
             <img
               src="public/playground_assets/image00451061-sgdl-200w.png"
               alt="IMAGE00451061"
               class="login-image0045"
-            />
+              />
           </div>
         </div>
       </div>
     </div>
+    <script src="/public/js/app.js">
+      
+    </script>
   </body>
 </html>

@@ -24,10 +24,10 @@
   top: 140px;
   left: -44px;
   color: rgba(243, 238, 223, 1);
-  width: 386px;
+  width: 400px;
   height: auto;
   position: absolute;
-  font-size: 24px;
+  font-size: 22px;
   align-self: auto;
   font-style: Regular;
   text-align: center;
@@ -63,7 +63,7 @@
 }
 .login-text02 {
   top: 37px;
-  left: 60px;
+  left: 100px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
