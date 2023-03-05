@@ -1,127 +1,179 @@
 <!DOCTYPE html>
 <html lang="english">
-  <head>
-    <title>exported project</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
+<head>
+  <title>exported project</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta charset="utf-8"/>
+  <meta content="summary_large_image" property="twitter:card"/>
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
+    body {
+      margin: 0;
+    }
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
 
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
+    p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button, input, optgroup, select, textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button, select {
+      text-transform: none;
+    }
+
+    button, [type="button"], [type="reset"], [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus, [type="button"]:-moz-focus, [type="reset"]:-moz-focus, [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link
+          data-tag="font"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+          rel="stylesheet"
+  />
+  <link href="./styles/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div>
+  <link href="./styles/login.css" rel="stylesheet"/>
+
+  <div class="signup-container;">
+    <div class="signup-signup">
+      <img
+              alt="Rectangle66630"
+              class="signup-rectangle6"
+              src="public/playground_assets/rectangle66630-jlvd-900h.png"
       />
-    <link rel="stylesheet" href="./styles/style.css" />
-   
-  </head>
-  <body>
+      <span class="signup-text"><span>Welcome back!</span></span>
 
-    <div>
-      <link href="./styles/login.css" rel="stylesheet" />
-
-      <div class="login-container">
-        <div class="login-login">
-          <img
-            src="public/playground_assets/rectangle66629-yqer-900h.png"
-            alt="Rectangle66629"
-            class="login-rectangle6"
-            />
-          <span class="login-text"><span>Sign in</span></span>
-          <div onclick="loginWithGoogle()" class="login-group7">
-            <span class="login-text02"><span style="width:100%">Sign in with Google</span></span>
-            <img
-              src="public/playground_assets/googlelogopngwebinaroptimizingforsuccessgooglebusi6629-gba-200h.png"
-              alt="googlelogopngwebinaroptimizingforsuccessgooglebusi6629"
-              class="login-googlelogopngwebinaroptimizingforsuccessgooglebusi"
-              />
-          </div>
-          <div class="login-group6">
-            <span class="login-text04"><span>OR</span></span>
-            <img
-              src="public/playground_assets/line26629-5koa.svg"
-              alt="Line26629"
-              class="login-line2"
-              />
-            <img
-              src="public/playground_assets/line36629-6irh.svg"
-              alt="Line36629"
-              class="login-line3"
-              />
-          </div>
-          <img
-            src="public/playground_assets/rectangle121061-j6y5-200h.png"
-            alt="Rectangle121061"
-            class="login-rectangle12"
-            />
-          <form action="">
-
-            <span class="login-text06"><span> <input style=" text-align:center;width:100%; background-color:rgba(243, 238, 223, 1);" type="email" name="email" placeholder="Email" id="email" value
-                  Email Address:></span></span>
-
-            <img
-              src="public/playground_assets/rectangle131061-f6yll-200h.png"
-              alt="Rectangle131061"
-              class="login-rectangle13"
-              />
-            <span class="login-text08"><span><input style="text-align:center;width:100%; background-color:rgba(243, 238, 223, 1);" type="Password"
-                  name="passwaord" placeholder="Password"id="password"></span></span>
-            <img
-              src="public/playground_assets/rectangle141061-tb6r-200h.png"
-              alt="Rectangle141061"
-              class="login-rectangle14"
-              />
-            <span class="login-text10"><span><input style="text-align:center;width:100%; background-color:rgba(243, 238, 223, 1);" type="submit" value="Login"></span></span>
-            <span class="login-text12">
-              <span>
-
-
-
-                <a href="/public/signup.html">  <span>Don’t have an account?
-                  <br />
-                  <span>Sign up here</span></span></a>
-                
-              </span>
-            </span>
-          </form>
-          <span class="login-text17"><span>Welcome back!</span></span>
-          <div class="login-group5">
-            <img
-              src="public/playground_assets/ellipse51061-7fiq-200h.png"
-              alt="Ellipse51061"
-              class="login-ellipse5"
-              />
-            <img
-              src="public/playground_assets/image00451061-sgdl-200w.png"
-              alt="IMAGE00451061"
-              class="login-image0045"
-              />
-          </div>
-        </div>
+      <div class="signup-group3" onclick="loginWithGoogle()">
+        <span class="signup-text04"><span>Log in with Google</span></span>
+        <img
+                alt="googlelogopngwebinaroptimizingforsuccessgooglebusi6630"
+                class="signup-googlelogopngwebinaroptimizingforsuccessgooglebusi"
+                src="public/playground_assets/googlelogopngwebinaroptimizingforsuccessgooglebusi6630-qmm9-200h.png"
+        />
       </div>
+      <div class="signup-group4">
+        <img
+                alt="Ellipse56630"
+                class="signup-ellipse5"
+                src="public/playground_assets/ellipse56630-zuvs-200h.png"
+        />
+        <img
+                alt="IMAGE00456630"
+                class="signup-image0045"
+                src="public/playground_assets/image00456630-fir-200w.png"
+        />
+      </div>
+      <img
+              alt="Line26630"
+              class="signup-line2"
+              src="public/playground_assets/line26630-fjmd.svg"
+      />
+      <img
+              alt="Line36631"
+              class="signup-line3"
+              src="public/playground_assets/line36631-cmgh.svg"
+      />
+      <span class="signup-text06">
+            <span>
+              <span>Sign in</span>
+              <b/>
+              <span>to get started</span>
+            </span>
+          </span>
+
+      <form>
+
+        <fieldset>
+
+          <input id="email" name="email" placeholder="Email address" type="email">
+          <input id="password" name="password" placeholder="Password" type="password">
+
+        </fieldset>
+
+        <div class="buttons">
+          <button id="submit" type="submit">Sign In</button>
+        </div>
+      </form>
+
+
+      <span class="signup-text02">
+                <p class="line"></p>
+                    <span>OR</span>
+                <p class="line"></p>
+            </span>
+
+      <span id="goToSignUp">
+              <span>Don't have an account?</span>
+              <span>Sign up here</span>
+            </span>
     </div>
-    <script src="/public/js/app.js">
-      
-    </script>
-  </body>
+  </div>
+</div>
+<script src="js/app.js"></script>
+</body>
 </html>
