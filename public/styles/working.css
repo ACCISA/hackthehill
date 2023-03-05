@@ -36,12 +36,17 @@
 }
 
 #search-result {
+  color: rgba(243, 238, 223, 1);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
   position: absolute;
   width: 350px;
   height: 100px;
   border: 10px;
   padding: 10px;
-  top: 400px;
+  top: 410px;
   left: 20px;
 }
 
@@ -54,7 +59,6 @@
   position: absolute;
   font-size: 24px;
   align-self: auto;
-  font-style: Regular;
   text-align: center;
   font-family: PoetsenOne;
   font-weight: 400;
@@ -67,7 +71,7 @@
 
 
 .working-text05 {
-  top: 210px;
+  top: 200px;
   left: 242px;
   color: rgba(243, 238, 223, 1);
   width: 124px;
@@ -75,7 +79,6 @@
   position: absolute;
   font-size: 24px;
   align-self: auto;
-  font-style: Regular;
   text-align: center;
   font-family: PoetsenOne;
   font-weight: 400;
@@ -87,7 +90,7 @@
 }
 
 .working-text07 {
-  top: 210px;
+  top: 200px;
   left: 21px;
   color: rgba(243, 238, 223, 1);
   width: 121px;
@@ -95,7 +98,6 @@
   position: absolute;
   font-size: 24px;
   align-self: auto;
-  font-style: Regular;
   text-align: center;
   font-family: PoetsenOne;
   font-weight: 400;
@@ -115,7 +117,6 @@
   position: absolute;
   font-size: 14px;
   align-self: auto;
-  font-style: Regular;
   text-align: center;
   font-family: PoetsenOne;
   font-weight: 400;
@@ -135,7 +136,6 @@
   position: absolute;
   font-size: 14px;
   align-self: auto;
-  font-style: Regular;
   text-align: center;
   font-family: PoetsenOne;
   font-weight: 400;
@@ -155,7 +155,6 @@
   position: absolute;
   font-size: 40px;
   align-self: auto;
-  font-style: Regular;
   text-align: center;
   font-family: PoetsenOne;
   font-weight: 400;

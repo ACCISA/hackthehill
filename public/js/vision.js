@@ -28,7 +28,6 @@ const takeSnap = () => {
     searchType = document.getElementById("search-type").checked
     context.drawImage(video, 0, 0, 640, 480);
     canvas.toBlob(upload, "image/jpeg");
-
 }
 
 function upload(file) {
@@ -65,7 +64,7 @@ const getNutritionData = (result) => {
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            var nutritionDataDiv = document.getElementById("nutritionData");
+            var nutritionDataDiv = document.getElementById("search-result");
             nutritionDataDiv.innerHTML = "<p>Calories: " + data.calories + "</p><p>Protein: " + data.totalNutrients.PROCNT.quantity.toFixed(2) + "g</p><p>Fat: " + data.totalNutrients.FAT.quantity.toFixed(2) + "g</p><p>Carbs: " + data.totalNutrients.CHOCDF.quantity.toFixed(2) + "g</p><p>Sugar: " + data.totalNutrients.SUGAR.quantity.toFixed(2) + "g</p><p>Fiber: " + data.totalNutrients.FIBTG.quantity.toFixed(2) + "g</p><p>Sodium: " + data.totalNutrients.NA.quantity.toFixed(2) + "mg</p>";
         })
         .catch(error => console.error(error));
