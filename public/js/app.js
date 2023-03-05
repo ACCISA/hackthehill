@@ -5,27 +5,27 @@ document.addEventListener("DOMContentLoaded", event => {
 })
 
 const testLog = () => {
-    firebase.auth().onAuthStateChanged(function(user) {
+    firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
-          // User is signed in.
+            // User is signed in.
             console.log("logged in as " + user.displayName)
         } else {
             console.log("user is not logged in")
             // No user is signed in.
         }
-      });
+    });
 }
 
 const loginWithGoogle = () => {
     const provider = new firebase.auth.GoogleAuthProvider()
     firebase.auth().signInWithPopup(provider)
-        .then(result =>{
+        .then(result => {
             const user = result.user
             document.write('Hello ' + user.displayName)
             console.log(user)
 
             if (user) {
-                if (isUserNew(user.email)){
+                if (isUserNew(user.email)) {
                     window.location.href = "working.html"
                 } else {
                     window.location.href = "settings.html"
@@ -33,7 +33,7 @@ const loginWithGoogle = () => {
 
             } else {
                 console.log("user is not logged in")
-           }
+            }
 
         })
         .catch(console.log)
@@ -43,24 +43,21 @@ const loginWithGoogle = () => {
 const isUserNew = email => {
     let headers = new Headers();
     headers.append("Content-Type", 'application/json')
-    headers.append('GET','POST')
-    headers.append("Access-Control-Allow-Origin","*")
+    headers.append('GET', 'POST')
+    headers.append("Access-Control-Allow-Origin", "*")
 
-    fetch ("http://127.0.0.1:5000/login",{
-        mode:'cors',
-        method: 'POST',
-        headers: headers,
-        body: JSON.stringify({
+    fetch("http://127.0.0.1:5000/login", {
+        mode: 'cors', method: 'POST', headers: headers, body: JSON.stringify({
             email: email
         })
     })
         .then((response) => {
             console.log(response)
-            if (response.ok){
+            if (response.ok) {
                 console.log("suc")
                 console.log()
                 return response.json()
-            } else{
+            } else {
                 console.log("non suc")
             }
 
@@ -72,5 +69,9 @@ const isUserNew = email => {
 }
 
 const goToSignUp = () => {
+    window.location = "signup.html";
+}
 
+const goToLogIn = () => {
+    window.location = "login.html";
 }
