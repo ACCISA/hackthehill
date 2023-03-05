@@ -7,7 +7,7 @@
     <meta property="twitter:card" content="summary_large_image" />
     <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
     <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
     </style>
     <style data-tag="default-style-sheet">
       html {
@@ -49,111 +49,109 @@
     <div>
       <link href="./styles/working.css" rel="stylesheet" />
 
-      <div class="working-container">
-        <div class="working-working">
- 
-               <img 
-            src="/public/public/playground_assets/rectangle65910-g5ye-900h.png"
-            alt="Rectangle65910"
-            class="working-rectangle6"
-            
-          />
-          <span class="working-text">
-            <span>
-              <span>Welcome back,</span>
-              <br/>
-              <span>NAME</span>
-            </span>
-          </span>
-          <img
-            src="public/playground_assets/line13910-69u.svg"
-            alt="Line13910"
-            class="working-line1"
-          />
-          <span class="working-text05"><span>Recipe</span></span>
-          <span class="working-text07"><span>Nutrients</span></span>
-          <span class="working-text09"><span>Show</span></span>
-          <span class="working-text11"><span>Show</span></span>
+     
+        <div class="wrapper">
+
          
-          <div class="working-component3off">
-            <div class="working-switchbody">
-              <img
-                src="public/playground_assets/switchbodyi662-1eof-200h.png"
-                alt="switchbodyI662"
-                class="working-switchbody1"
-              />
-            </div>
-            <div class="working-switch">
-              <img
-                src="public/playground_assets/ellipse1i662-siu9-200h.png"
-                alt="Ellipse1I662"
-                class="working-ellipse1"
-              />
-              <img
-                src="public/playground_assets/ellipse2i662-y9uo-200h.png"
-                alt="Ellipse2I662"
-                class="working-ellipse2"
-              />
-              <div class="working-mask-group">
-                <div class="working-group2"></div>
-              </div>
-            </div>
+
+
+          <div>
+            <h1 id="head" >Take A Picture Of Your Product And Select The Desired Outcome:</h1>
           </div>
-          <div class="working-component3on">
-            <div class="working-switchbody2">
-              <img
-                src="public/playground_assets/switchbodyi662-85zo-200h.png"
-                alt="switchbodyI662"
-                class="working-switchbody3"
-              />
-            </div>
-            <div class="working-switch1">
-              <img
-                src="public/playground_assets/ellipse1i662-oj7-200h.png"
-                alt="Ellipse1I662"
-                class="working-ellipse11"
-              />
-              <img
-                src="public/playground_assets/ellipse2i662-dm9k-200h.png"
-                alt="Ellipse2I662"
-                class="working-ellipse21"
-              />
-              <div class="working-mask-group1">
-                <div class="working-group21"></div>
-              </div>
-            </div>
-          </div>
-          <div class="working-component2">
-            <div class="working-switchbody5">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-             
-             
-            </div>
-            <div class="working-switch2">
-             
-              
-            </div>
-          </div>
-          <div class="working-group8">
-            <img
-              src="public/playground_assets/ellipse51061-iuia-200h.png"
-              alt="Ellipse51061"
-              class="working-ellipse5"
-            />
-            <img
-              src="public/playground_assets/image00451061-ue2-200w.png"
-              alt="IMAGE00451061"
-              class="working-image0045"
-            />
-          </div>
-          <video id="webCam" autoplay playsinlne width="800" height="600"></video>
+
+          <video style="object-fit:cover; max-width:100%;max-height:100%; border:1px solid black" id="webCam" autoplay playsinlne width="800px" height="300px"></video>
           <canvas id="canvas"></canvas>
           <a id="a-tag" download onclick="takeSnap()">SNAP</a>
         </div>
-        
+      
+    </div>
+
+    <div class="working-group8">
+      <img
+        src="public/playground_assets/ellipse51061-iuia-200h.png"
+        alt="Ellipse51061"
+        class="working-ellipse5"
+      />
+      <img
+        src="public/playground_assets/image00451061-ue2-200w.png"
+        alt="IMAGE00451061"
+        class="working-image0045"
+      />
+      <span class="working-text">
+        <span>
+          <span>Welcome back,</span>
+          <br/>
+          <span>NAME</span>
+        </span>
+      </span>
+    
+    
+      <span class="working-text05"><span>Recipe</span></span>
+      <span class="working-text07"><span>Nutrients</span></span>
+      <span class="working-text09"><span>Show</span></span>
+      <span class="working-text11"><span>Show</span></span>
+     
+      <div class="working-component3off">
+        <div class="working-switchbody">
+          <img
+            src="public/playground_assets/switchbodyi662-1eof-200h.png"
+            alt="switchbodyI662"
+            class="working-switchbody1"
+          />
+        </div>
+        <div class="working-switch">
+          <img
+            src="public/playground_assets/ellipse1i662-siu9-200h.png"
+            alt="Ellipse1I662"
+            class="working-ellipse1"
+          />
+          <img
+            src="public/playground_assets/ellipse2i662-y9uo-200h.png"
+            alt="Ellipse2I662"
+            class="working-ellipse2"
+          />
+          <div class="working-mask-group">
+            <div class="working-group2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="working-component3on">
+        <div class="working-switchbody2">
+          <img
+            src="public/playground_assets/switchbodyi662-85zo-200h.png"
+            alt="switchbodyI662"
+            class="working-switchbody3"
+          />
+        </div>
+        <div class="working-switch1">
+          <img
+            src="public/playground_assets/ellipse1i662-oj7-200h.png"
+            alt="Ellipse1I662"
+            class="working-ellipse11"
+          />
+          <img
+            src="public/playground_assets/ellipse2i662-dm9k-200h.png"
+            alt="Ellipse2I662"
+            class="working-ellipse21"
+          />
+          <div class="working-mask-group1">
+            <div class="working-group21"></div>
+          </div>
+        </div>
+      </div>
+      <div class="working-component2">
+        <div class="working-switchbody5">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+         
+         
+        </div>
+        <div class="working-switch2">
+         
+          
+        </div>
       </div>
     </div>
 
